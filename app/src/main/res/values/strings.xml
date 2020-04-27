@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobiiliTietoLiikenneLabs</string>
+    <string name="assignmentHeaderText">Assignment: </string>
+    <string name="noteHeaderText">Note from dev: </string>
+</resources>

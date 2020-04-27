@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab1_1"><![CDATA[
+        1.1. GPS Location
+            Create an Android app which shows GPS location on the device screen.
+    ]]></string>
+
+        <string name="lab1_1_note"><![CDATA[
+            Using FusedLocation API provided by Google Play Services, combines GPS to WLAN  etc. Should be more power efficient.
+            Was going to implement also the normal GPS but didn\'t get around to it. And this should be more battery friendly in real life.
+
+        ]]></string>
+
+    <string name="lab1_2"><![CDATA[
+        1.2. Reverse geocoding
+            Reverse geocoding is a way to get an address based on the latitude and longitude coordinates.
+    ]]></string>
+
+        <string name="lab1_2_note"><![CDATA[
+            For some reason Maps Geocoder occasionally starts returning null, try switching emulator or running on phone.
+            Can\'t figure out what the issue is. Shares code with lab1_1, just switches functionality according to assignment.
+        ]]></string>
+
+
+    <string name="lab1_3"><![CDATA[
+        1.3. Simple HTTP
+            Create app that can be used to load textual content from network addresses. Please follow the ui style on the image.
+    ]]></string>
+
+        <string name="lab1_3_note"><![CDATA[
+            Under address shows what Policy were using. This is needed as labs code also runs lab2_1 just differently.
+        ]]></string>
+
+    <string name="lab2_1"><![CDATA[
+        2.1. Asynchronous Simple HTTP On previous week’s assignments we had to do a little ”hack” to get rid of the Android’s security policy.
+        Today we are going to ﬁx that and do things right. We have to change our code to work asynchronously.
+        In practice this means that we are several thing in parallel. For example,
+        UI is fully functional at the same time when we are loading something from the network.
+        This was not the case on previous week’s assignment. If we would have loaded large ﬁles, the UI would be totally jammed during the loading.
+        There are several ways to solve this problem and today we are going to use AsyncTask to solve it.
+    ]]></string>
+
+        <string name="lab2_1_note"><![CDATA[
+            Under address shows what Policy were using. This is needed as lab runs lab2_1 code, just differently.
+        ]]></string>
+
+    <string name="lab2_2"><![CDATA[
+        2.2. Stock Monitor
+        Create an app which can be used as stock monitor. Using REST and JSON.
+    ]]></string>
+
+        <string name="lab2_2_note"><![CDATA[
+        Can´t remember if I had any weird issues with this one. Shares code with lab2_3, just switches adding feature off for this one.
+        ]]></string>
+
+    <string name="lab2_3"><![CDATA[
+        2.3. Stock Monitor V2
+        Create a copy of the previous stock monitor app. Modify it in a way that you can add more stocks to the app.
+    ]]></string>
+
+        <string name="lab2_3_note"><![CDATA[
+        Shares code with 2.2.
+        ]]></string>
+
+    <string name="lab3_1"><![CDATA[
+        3.1. HTTP Last week we studied how to create network requests inside AsyncTask.
+        Luckily we have easier way to do requests with a official helper library Volley.
+    ]]></string>
+
+        <string name="lab3_1_note"><![CDATA[
+        Copied code from 1.3/2.1 removed chunks of it and made new. Would have been fun to try to combine all three, but didn´t want to break all of them.
+        ]]></string>
+
+    <string name="lab3_2"><![CDATA[
+        3.2. Football competitions (leagues) Create an app which can be used to list soccer competitions (leagues)
+    ]]></string>
+
+        <string name="lab3_2_note"><![CDATA[
+        Managed to overuse the free access to API so I had to register for free API Authorisation Token… and find out how to use it.
+        Shares code with 4.1.
+        ]]></string>
+
+    <string name="lab3_3"><![CDATA[
+        3.3. Corona Virus in Finland App (Not mandatory, vapaaehtoinen)
+        Luo sovellus jolla voidaan seurata koronaviruksen leviämistä Suomessa.
+        Katso rajapinnan kuvaus osoitteesta: https://github.com/HS-Datadesk/koronavirus-avoindata
+    ]]></string>
+
+        <string name="lab3_3_note"><![CDATA[
+        Didn\'t do this. Would have been interesting but just didn\'t have the time.
+        ]]></string>
+
+    <string name="lab4_1"><![CDATA[
+        4.1. Football competitions (with areas)
+        Modify the previous football tournament app to ﬁrst show all available areas of the competitions.
+        When user clicks one of the areas app will open other activity which will show a list of available competitions from that selected area.
+        This API was already used in the previous assignment.
+    ]]></string>
+
+        <string name="lab4_1_note"><![CDATA[
+        Shares code with 3.3. so "Managed to overuse the free access to API so I had to register for free API Authorisation Token… and find out how to use it. "
+        Would have liked to filter out countries without league, but not sure how to efficiently do that. That and time.
+        ]]></string>
+
+    <string name="lab4_2"><![CDATA[
+        4.2. WebSocket based chat Create a chat application with web socket.
+    ]]></string>
+
+        <string name="lab4_2_note"><![CDATA[
+            For reasons unknown to me, gets the old messages only after you click edittext and keyboard opens.
+            Other than that, ugly but works.
+        ]]></string>
+
+    <string name="notice_title">Hox! Take notice.</string>
+    <string name="notice_text">
+        Before you proceed there is somethings you should know.\n\n
+
+        This app was made in Oulu University of Applied Sciences for course: IN00BQ32 Mobiilisovellusten kehitysprojekti K2020 TVT18SPO,
+        for part Mobiili Tietoliikenne (MOBILE APPLICATION DEVELOPMENT PROJECT, Mobile Data Communications)\n\n
+
+        App combines all the courses Labs into one for convenience.\n
+        Use the spinner to choose the Lab, below it reads the assignment.\n
+        And below that, are my notes, if any, and button to launch the assignment.\n
+        Use back button to return.\n\n
+
+        Developed in emulator with 5" display and 1920x1080 resolution. Using emulator with lower API level than 29 might require updating Google Play Services. So if you have issues you might try to use those.\n\n
+        - Asko
+
+    </string>
+
+</resources>

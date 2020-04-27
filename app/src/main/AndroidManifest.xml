@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobiilitietoliikennelabs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lab4_2"></activity>
+        <activity android:name=".lab4_1" />
+        <activity android:name=".lab3_3" />
+        <activity android:name=".lab3_2" />
+        <activity android:name=".lab3_1" />
+        <activity android:name=".lab2_3" />
+        <activity android:name=".lab2_2" />
+        <activity android:name=".lab2_1" />
+        <activity android:name=".Utilities" />
+        <activity android:name=".lab1_3" />
+        <activity android:name=".lab1_2" />
+        <activity android:name=".lab1_1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+    </application>
+
+</manifest>
